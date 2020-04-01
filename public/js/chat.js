@@ -1,5 +1,5 @@
 
-const socket = io('http://localhost:8000')
+const socket = io('http://localhost:8080')
 
 socket.emit('server')
 
