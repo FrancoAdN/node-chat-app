@@ -18,5 +18,8 @@
     "nodemailer": "^6.4.4",
     "path": "^0.12.7",
     "socket.io": "^2.3.0"
+  },
+  "engines": {
+    "node":"10.x"
   }
 }
