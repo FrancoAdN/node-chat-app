@@ -1,6 +1,8 @@
 
 const socket = io('http://localhost:1234', { transports: ['websocket', 'polling'] })
 
+console.log("Test");
+
 socket.emit('server')
 
 socket.on('server', (auth) => {
