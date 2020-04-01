@@ -1,5 +1,5 @@
 
-const socket = io('ws://localhost:1234', { transports: ['websocket', 'polling'] })
+const socket = io('http://localhost:1234', { transports: ['websocket', 'polling'] })
 
 socket.emit('server')
 
