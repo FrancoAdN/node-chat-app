@@ -1,4 +1,4 @@
-const socket = io('ws://localhost:3001', { transports: ['websocket'] });
+const socket = io('http://localhost:8000')
 
 socket.emit('client');
 
