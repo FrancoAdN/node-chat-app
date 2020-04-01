@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>CHAT</title>
+		<style>
+			p {
+				margin: 0;
+				padding: 0;
+			}
+			#chat {
+				width: 400px;
+				border: 1px black solid;
+				height: 550px;
+				position: relative;
+			}
+			#msg-box {
+				width: 390px;
+				height: 30px;
+				position: fixed;
+				top: 560px;
+			}
+			#content {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="chat">
+			<div id="content"></div>
+			<input type="text" name="" id="msg-box" onkeyup="keyUp(event)" />
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+		<script src="../js/client.js"></script>
+	</body>
+</html>
