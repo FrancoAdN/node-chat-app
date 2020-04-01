@@ -9,8 +9,8 @@ const socket = require('socket.io')
 
 //#region  config
 const app = express()
-const server = app.listen(8080,
-    () => console.log('Server running on port ' + 8080))
+const server = app.listen(1234,
+    () => console.log('Server running on port ' + 1234))
 const io = socket(server)
 
 const transporter = nodemailer.createTransport({
