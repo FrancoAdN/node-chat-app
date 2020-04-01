@@ -1,4 +1,4 @@
-const socket = io('http://localhost:8080')
+const socket = io('ws://localhost:8080', { transports: ['websocket', 'polling'] })
 
 socket.emit('client');
 
